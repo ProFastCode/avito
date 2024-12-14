@@ -5,7 +5,7 @@ from src.utils.wait_for_element import wait_for_element
 from src.utils.handle_write_buttons import handle_write_buttons
 
 
-def main(driver):
+def start_process(driver):
     """
     Запускает процесс обработки кнопок для отправки сообщений.
 
@@ -29,4 +29,4 @@ if __name__ == "__main__":
     driver = webdriver.Chrome()
     driver.get("https://www.avito.ru/")
     input("Войдите в аккаунт, выставьте фильтры, а после нажмите <Enter>")
-    main(driver)
+    start_process(driver)
